@@ -10,6 +10,7 @@ Trabalho para a disciplina de Projeto e Analise de Algoritmos
 
 O nosso código foi pensado utilizando uma pilha implícita de recursão onde é verificado os numero de 1 a 9 em cada posição vaga, assim verifica se o número que está na posição vaga é válido ou não (se é ou não um possível candidato), caso seja, ele coloca o numero na matriz, e chama recursivamente a função novamente, verificando se ainda é possível andar na coluna, ou se a coluna acabou e deve se passar para a linha de baixo. Caso não seja possível colocar nenhum dos 9 números na posição, é feito o backtracking, saindo do loop e retornando falso para retirar o número da matriz, voltando como 0 e verificando os outros números ainda não verificados. Caso o número não seja um número vago, então é somado mais 1 na coluna ou na linha, seguindo a mesma lógica da função de recursão, porém sem a recursão, para a verificação do próximo número que esteja vago. Dessa forma, ou chegando ao final da matriz, o caso base é de que se a matriz não possui mais nenhum número 0, e assim é retornado verdadeiro, para todas as recursão removendo em cadeia da pilha.
   Abaixo está uma breve explicação de todas as funções que foram utilizadas durante o codigo:
+  
  Função “posicao_valida”:
  
   Esta função verifica se é possível inserir um número (num) em uma posição específica de uma matriz 9x9 (matrix) que representa um jogo de Sudoku, seguindo as regras do Sudoku. As coordenadas da posição em que se deseja inserir o número são especificadas pelas variáveis lin (linha) e col (coluna).
